@@ -56,19 +56,23 @@ addFavItem = async (theObj)=>{
 						<h2> {this.state.msg}</h2>
 						}
 						
-           <Container>
+           <Container style={{ fontFamily: `'Courgette', cursive`}}>
              <Row>
 							 {this.state.apiData.map(item =>{
 								 return(
 									<Card style={{ width: '18rem' }}>
 			
 									<Card.Body>
-									<Card.Title>{item.name}</Card.Title>
-									<Card.Text>
+									<Card.Title style={{fontFamily: `'Courgette', cursive` , color:'#0a9396' ,fontSize:'1.9rem'}}>{item.name}</Card.Title>
+									<Card.Text style={{
+										fontSize:'1.4rem' , color:'#003049'
+										 }} >
 											{item.gender}
 										 </Card.Text>
 										 <Card.Img variant="top" src={item.img} />
-										 <Card.Text>
+										 <Card.Text style={{
+											 backgroundColor:'#ccd5ae'
+										 }}>
 											 <ul>
 											{item.psiPowers.map(one=>
 											<li>

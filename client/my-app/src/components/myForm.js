@@ -7,7 +7,7 @@ class MyForm extends React.Component {
     
     render() { 
         return (  
-            <Form onSubmit={(e)=>this.props.updateData(e)}>
+            <Form style={{width:'600px' , marginLeft:'100px' ,textAlign:'center' , fontFamily: `'Pattaya', sans-serif`}} onSubmit={(e)=>this.props.updateData(e)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>  Enter the Name</Form.Label>
              <Form.Control onChange={(e)=>{this.props.updateName(e)}} type="text" placeholder="Enter Name" value={this.props.name} />
@@ -20,8 +20,12 @@ class MyForm extends React.Component {
                 </Form.Group>
  
                 <Button variant="primary" type="submit">
-                   Submit
+                  Update Me 💞
                  </Button>
+                 <br />
+                 <br />
+                 <br />
+                 <br />
             </Form>
         );
     }
